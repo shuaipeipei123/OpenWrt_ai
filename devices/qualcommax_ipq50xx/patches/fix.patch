@@ -38,17 +38,6 @@ index 00000000000000..1481f8844bf45e
  	$(call Device/FitImageLzma)
  	DEVICE_VENDOR := I-O DATA
 
---- a/target/linux/qualcommax/ipq50xx/base-files/etc/board.d/02_network
-+++ b/target/linux/qualcommax/ipq50xx/base-files/etc/board.d/02_network
-@@ -16,6 +16,7 @@ ipq50xx_setup_interfaces()
- 		ucidef_set_interfaces_lan_wan "lan1 lan2" "wan"
- 		;;
- 	cmcc,pz-l8|\
-+	jdcloud,re-cs-03|\
- 	linksys,mx2000|\
- 	linksys,mx5500|\
- 	linksys,spnmx56|\
-
 --- a/target/linux/qualcommax/ipq50xx/base-files/lib/upgrade/platform.sh
 +++ b/target/linux/qualcommax/ipq50xx/base-files/lib/upgrade/platform.sh
 @@ -120,6 +120,11 @@ platform_do_upgrade() {

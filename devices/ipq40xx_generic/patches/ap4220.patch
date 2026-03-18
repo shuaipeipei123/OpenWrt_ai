@@ -129,9 +129,9 @@ diff --git a/target/linux/ipq40xx/base-files/lib/upgrade/platform.sh b/target/li
 index 53a95611487b50..8f4f002dbea61d 100644
 --- a/target/linux/ipq40xx/base-files/lib/upgrade/platform.sh
 +++ b/target/linux/ipq40xx/base-files/lib/upgrade/platform.sh
-@@ -134,7 +134,8 @@ platform_do_upgrade() {
- 		CI_DATAPART="rootfs_data"
- 		emmc_do_upgrade "$1"
+@@ -132,7 +132,8 @@ platform_do_upgrade() {
+ 	wallys,dr40x9)
+ 		nand_do_upgrade "$1"
  		;;
 -	alfa-network,ap120c-ac)
 +	alfa-network,ap120c-ac|\
